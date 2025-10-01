@@ -35,7 +35,6 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <HeroSection />
       <SearchFilters
         searchQuery={searchQuery}
         selectedArea={selectedArea}
@@ -44,6 +43,7 @@ export default function Home() {
         onAreaChange={setSelectedArea}
         onServiceChange={setSelectedService}
       />
+      <HeroSection />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
