@@ -2,7 +2,6 @@ import { useQuery } from "@tanstack/react-query";
 import { useParams, Link } from "wouter";
 import {
   Phone,
-  Mail,
   MapPin,
   Clock,
   Tag,
@@ -10,6 +9,8 @@ import {
   Star,
   CheckCircle,
   ArrowLeft,
+  MessageSquare,
+  Mail,
 } from "lucide-react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -230,24 +231,6 @@ export default function PlumberProfile() {
               </div>
             </div>
 
-            {plumber.openingHours && (
-              <div className="mb-8">
-                <h3 className="text-lg font-semibold text-foreground mb-4">Opening Hours</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  {Object.entries(plumber.openingHours).map(([day, hours]) => (
-                    <div
-                      key={day}
-                      className="flex justify-between p-3 bg-muted/50 rounded-lg"
-                      data-testid={`hours-${day}`}
-                    >
-                      <span className="font-medium capitalize">{day}</span>
-                      <span className="text-muted-foreground">{hours}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
             <div className="pt-6 border-t border-border flex flex-wrap gap-3">
               <a
                 href={`tel:${plumber.phone}`}
@@ -258,12 +241,12 @@ export default function PlumberProfile() {
                 Call Now
               </a>
               <a
-                href={`mailto:${plumber.email}`}
+                href={`sms:${plumber.phone}`}
                 className="flex-1 inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary rounded-lg hover:bg-primary/10 transition-colors font-medium"
-                data-testid="button-email"
+                data-testid="button-message"
               >
-                <Mail className="mr-2 h-5 w-5" />
-                Send Email
+                <MessageSquare className="mr-2 h-5 w-5" />
+                Message
               </a>
             </div>
           </div>
