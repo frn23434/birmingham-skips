@@ -44,6 +44,7 @@ export default function Home() {
         onAreaChange={setSelectedArea}
         onServiceChange={setSelectedService}
       />
+      <div className="h-24 md:h-28"></div>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
