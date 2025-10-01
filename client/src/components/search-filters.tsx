@@ -41,7 +41,7 @@ export default function SearchFilters({
   onServiceChange,
 }: SearchFiltersProps) {
   return (
-    <section className="bg-card border-b border-border fixed top-16 left-0 right-0 z-40 shadow-sm">
+    <section className="bg-card border-b border-border sticky top-16 z-40 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="flex flex-col md:flex-row gap-4">
           <div className="flex-1 relative">
