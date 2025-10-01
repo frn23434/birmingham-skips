@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useParams, Link } from "wouter";
+import { useEffect } from "react";
 import {
   Phone,
   MapPin,
@@ -24,6 +25,80 @@ export default function PlumberProfile() {
     queryKey: ["/api/plumbers", id],
     enabled: !!id,
   });
+
+  useEffect(() => {
+    const originalDescription = "Find trusted, verified plumbers in Bradford, UK. Search by area and service including emergency repairs, boiler installation, bathroom fitting, and more. Gas Safe registered professionals available 24/7.";
+    
+    if (plumber) {
+      document.title = `${plumber.businessName} - Plumber in Bradford | BradfordPlumbing.co.uk`;
+      
+      const metaDescription = document.querySelector('meta[name="description"]');
+      if (metaDescription) {
+        metaDescription.setAttribute('content', `${plumber.businessName} - ${plumber.description.substring(0, 150)}... Contact: ${plumber.phone}. Serving ${plumber.serviceAreas.join(', ')} in Bradford, UK.`);
+      }
+
+      // Update canonical URL for this profile
+      let canonical = document.querySelector('link[rel="canonical"]');
+      if (!canonical) {
+        canonical = document.createElement('link');
+        canonical.setAttribute('rel', 'canonical');
+        document.head.appendChild(canonical);
+      }
+      canonical.setAttribute('href', `https://bradfordplumbing.co.uk/plumber/${plumber.id}`);
+
+      // Add Schema.org structured data
+      const existingSchema = document.getElementById('plumber-schema');
+      if (existingSchema) {
+        existingSchema.remove();
+      }
+
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": "Plumber",
+        "name": plumber.businessName,
+        "description": plumber.description,
+        "telephone": plumber.phone,
+        "email": plumber.email,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": plumber.address,
+          "addressLocality": "Bradford",
+          "addressRegion": "West Yorkshire",
+          "addressCountry": "GB"
+        },
+        "areaServed": plumber.serviceAreas.map(area => ({
+          "@type": "City",
+          "name": area
+        })),
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": plumber.rating,
+          "reviewCount": plumber.reviewCount
+        },
+        "priceRange": "££"
+      };
+
+      const script = document.createElement('script');
+      script.id = 'plumber-schema';
+      script.type = 'application/ld+json';
+      script.text = JSON.stringify(schema);
+      document.head.appendChild(script);
+    }
+    
+    return () => {
+      document.title = "Bradford Plumbing - Find Trusted Local Plumbers in Bradford, UK";
+      const metaDescription = document.querySelector('meta[name="description"]');
+      if (metaDescription) {
+        metaDescription.setAttribute('content', originalDescription);
+      }
+      const canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical) {
+        canonical.setAttribute('href', 'https://bradfordplumbing.co.uk/');
+      }
+      const schema = document.getElementById('plumber-schema');
+      if (schema) schema.remove();
+    };
+  }, [plumber]);
 
   const renderStars = (rating: number) => {
     const stars = [];
@@ -104,9 +179,9 @@ export default function PlumberProfile() {
               </div>
 
               <div className="flex-1">
-                <h2 className="text-2xl font-bold text-foreground mb-2" data-testid="text-business-name">
-                  {plumber.businessName}
-                </h2>
+                <h1 className="text-2xl font-bold text-foreground mb-2" data-testid="text-business-name">
+                  {plumber.businessName} - Plumber in Bradford
+                </h1>
 
                 <div className="flex items-center gap-3 mb-4">
                   <div className="flex items-center text-amber-500">
