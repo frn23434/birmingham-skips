@@ -80,7 +80,7 @@ export default function Home() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Trusted Plumbing Experts on the Isle of Wight</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                With over 15 years of experience, Isle of Wight Plumbing provides professional plumbing services to homes and businesses across the island. Our Gas Safe registered engineers are available 24/7 for emergency call-outs.
+                Isle of Wight Plumbing provides professional plumbing services to homes and businesses across the island. Our Gas Safe registered engineers are available 24/7 for emergency call-outs.
               </p>
               <p className="text-lg text-muted-foreground">
                 From emergency repairs to full bathroom installations, our experienced team delivers quality workmanship and reliable service throughout Newport, Ryde, Cowes, and all areas of the Isle of Wight.
