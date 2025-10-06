@@ -89,7 +89,7 @@ export default function Home() {
             </div>
             <div className="relative">
               <img 
-                src={plumberImage1} 
+                src={plumberImage2} 
                 alt="Professional Isle of Wight plumbing engineer working on pipes - Gas Safe registered plumber" 
                 className="rounded-lg shadow-xl w-full h-auto"
                 data-testid="img-plumber-work"
