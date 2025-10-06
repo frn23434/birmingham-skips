@@ -103,7 +103,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 Isle of Wight Plumbing. All rights reserved. |{" "}
+            © 2025 Isle of Wight Plumbing. All rights reserved. |{" "}
             <a href="#" className="hover:text-primary transition-colors" data-testid="link-footer-privacy">
               Privacy Policy
             </a>{" "}
