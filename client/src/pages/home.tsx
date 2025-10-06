@@ -7,6 +7,7 @@ import plumberImage2 from "@assets/stock_images/professional_plumber_85e38b42.jp
 import plumberImage3 from "@assets/stock_images/professional_plumber_019c5dd3.jpg";
 import boilerImage from "@assets/stock_images/boiler_installation__f4c1d23e.jpg";
 import boilerImage2 from "@assets/stock_images/boiler_installation__eda368ec.jpg";
+import boilerRepairImage from "@assets/stock_images/plumber_repairing_bo_6ddd9f90.jpg";
 import bathroomImage from "@assets/stock_images/bathroom_plumbing_si_c6369c0e.jpg";
 import emergencyImage from "@assets/stock_images/emergency_plumbing_t_094bc9f8.jpg";
 
@@ -91,8 +92,8 @@ export default function Home() {
             </div>
             <div className="relative">
               <img 
-                src={boilerImage2} 
-                alt="Professional Isle of Wight plumbing and heating services - boiler installation and repair" 
+                src={boilerRepairImage} 
+                alt="Professional Isle of Wight plumber repairing boiler - heating engineer servicing boiler system" 
                 className="rounded-lg shadow-xl w-full h-auto"
                 data-testid="img-plumber-work"
               />
