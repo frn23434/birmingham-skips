@@ -2,12 +2,8 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { Phone, Mail, MapPin, Wrench, Shield, Clock, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import plumberImage1 from "@assets/stock_images/professional_plumber_f76d645e.jpg";
-import plumberImage2 from "@assets/stock_images/professional_plumber_85e38b42.jpg";
-import plumberImage3 from "@assets/stock_images/professional_plumber_019c5dd3.jpg";
+import plumberWorkImage from "@assets/image_1759766105485.png";
 import boilerImage from "@assets/stock_images/boiler_installation__f4c1d23e.jpg";
-import boilerImage2 from "@assets/stock_images/boiler_installation__eda368ec.jpg";
-import boilerRepairImage from "@assets/stock_images/plumber_repairing_bo_6ddd9f90.jpg";
 import bathroomImage from "@assets/stock_images/bathroom_plumbing_si_c6369c0e.jpg";
 import emergencyImage from "@assets/stock_images/emergency_plumbing_t_094bc9f8.jpg";
 
@@ -92,8 +88,8 @@ export default function Home() {
             </div>
             <div className="relative">
               <img 
-                src={boilerRepairImage} 
-                alt="Professional Isle of Wight plumber repairing boiler - heating engineer servicing boiler system" 
+                src={plumberWorkImage} 
+                alt="Professional Isle of Wight plumber working on pipes - expert plumbing repair services" 
                 className="rounded-lg shadow-xl w-full h-auto"
                 data-testid="img-plumber-work"
               />
