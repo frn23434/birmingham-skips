@@ -1,8 +1,8 @@
-# Bradford Plumbing Directory
+# Isle of Wight Plumbing Directory
 
 ## Overview
 
-This is a full-stack web application for finding and browsing local plumbers in Bradford, UK. The application provides a searchable directory of plumbing businesses with detailed profiles, ratings, service areas, and contact information. Built with React (Vite) on the frontend and Express.js on the backend, it features a modern UI using shadcn/ui components and Tailwind CSS.
+This is a full-stack web application for finding and browsing local plumbers on the Isle of Wight, UK. The application provides a searchable directory of plumbing businesses with detailed profiles, ratings, service areas, and contact information. Built with React (Vite) on the frontend and Express.js on the backend, it features a modern UI using shadcn/ui components and Tailwind CSS.
 
 ## User Preferences
 
