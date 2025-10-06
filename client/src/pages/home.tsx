@@ -4,6 +4,7 @@ import { Phone, Mail, MapPin, Wrench, Shield, Clock, CheckCircle } from "lucide-
 import { Button } from "@/components/ui/button";
 import plumberImage1 from "@assets/stock_images/professional_plumber_f76d645e.jpg";
 import plumberImage2 from "@assets/stock_images/professional_plumber_85e38b42.jpg";
+import plumberImage3 from "@assets/stock_images/professional_plumber_019c5dd3.jpg";
 import boilerImage from "@assets/stock_images/boiler_installation__f4c1d23e.jpg";
 import bathroomImage from "@assets/stock_images/bathroom_plumbing_si_c6369c0e.jpg";
 import emergencyImage from "@assets/stock_images/emergency_plumbing_t_094bc9f8.jpg";
@@ -89,7 +90,7 @@ export default function Home() {
             </div>
             <div className="relative">
               <img 
-                src={plumberImage2} 
+                src={plumberImage3} 
                 alt="Professional Isle of Wight plumbing engineer working on pipes - Gas Safe registered plumber" 
                 className="rounded-lg shadow-xl w-full h-auto"
                 data-testid="img-plumber-work"
