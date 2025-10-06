@@ -1,8 +1,8 @@
-# Isle of Wight Plumbing Directory
+# Isle of Wight Plumbing
 
 ## Overview
 
-This is a full-stack web application for finding and browsing local plumbers on the Isle of Wight, UK. The application provides a searchable directory of plumbing businesses with detailed profiles, ratings, service areas, and contact information. Built with React (Vite) on the frontend and Express.js on the backend, it features a modern UI using shadcn/ui components and Tailwind CSS.
+This is a professional one-page business website for Isle of Wight Plumbing, a plumbing service company serving the entire Isle of Wight, UK. The site showcases services, service areas, and contact information in a clean, modern design. Built with React (Vite) on the frontend and Express.js on the backend, it features a modern UI using shadcn/ui components and Tailwind CSS.
 
 ## User Preferences
 
