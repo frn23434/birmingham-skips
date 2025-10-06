@@ -1,4 +1,4 @@
-import { Wrench } from "lucide-react";
+import { Wrench, Facebook, Twitter, Instagram, Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -8,20 +8,20 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-4">
               <Wrench className="text-primary text-xl mr-2" />
-              <h3 className="text-lg font-semibold text-foreground">Bradford Plumbing</h3>
+              <h3 className="text-lg font-semibold text-foreground">Isle of Wight Plumbing</h3>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
-              Your trusted directory for finding qualified plumbers across Bradford and surrounding areas.
+              Professional plumbing services across the Isle of Wight. Gas Safe registered engineers available 24/7.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
-                <i className="fab fa-facebook-f text-sm"></i>
+              <a href="#" className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors" data-testid="link-footer-facebook">
+                <Facebook className="h-4 w-4" />
               </a>
-              <a href="#" className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
-                <i className="fab fa-twitter text-sm"></i>
+              <a href="#" className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors" data-testid="link-footer-twitter">
+                <Twitter className="h-4 w-4" />
               </a>
-              <a href="#" className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
-                <i className="fab fa-instagram text-sm"></i>
+              <a href="#" className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors" data-testid="link-footer-instagram">
+                <Instagram className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -30,23 +30,23 @@ export default function Footer() {
             <h4 className="text-sm font-semibold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Find a Plumber
+                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-services">
+                  Our Services
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="tel:01983123456" className="text-sm text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-emergency">
                   Emergency Services
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-areas">
                   Service Areas
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  About Us
+                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-contact">
+                  Contact Us
                 </a>
               </li>
             </ul>
@@ -56,22 +56,22 @@ export default function Footer() {
             <h4 className="text-sm font-semibold text-foreground mb-4">Popular Services</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-boiler">
                   Boiler Repairs
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-bathroom">
                   Bathroom Fitting
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-leak">
                   Leak Detection
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-gas">
                   Gas Safety
                 </a>
               </li>
@@ -81,17 +81,21 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-foreground mb-4">Contact Us</h4>
             <ul className="space-y-2">
-              <li className="text-sm text-muted-foreground">
-                <i className="fas fa-envelope mr-2"></i>
-                info@bradfordplumbing.co.uk
+              <li className="text-sm text-muted-foreground flex items-center gap-2">
+                <Phone className="h-4 w-4" />
+                <a href="tel:01983123456" className="hover:text-primary transition-colors" data-testid="link-footer-phone">01983 123456</a>
               </li>
-              <li className="text-sm text-muted-foreground">
-                <i className="fas fa-map-marker-alt mr-2"></i>
-                Bradford, West Yorkshire
+              <li className="text-sm text-muted-foreground flex items-center gap-2">
+                <Mail className="h-4 w-4" />
+                <a href="mailto:info@isleofwightplumbing.co.uk" className="hover:text-primary transition-colors" data-testid="link-footer-email">info@isleofwightplumbing.co.uk</a>
               </li>
-              <li className="text-sm text-muted-foreground">
-                <i className="fas fa-clock mr-2"></i>
-                Mon-Fri: 9am - 6pm
+              <li className="text-sm text-muted-foreground flex items-center gap-2" data-testid="text-footer-location">
+                <MapPin className="h-4 w-4" />
+                Isle of Wight, UK
+              </li>
+              <li className="text-sm text-muted-foreground flex items-center gap-2" data-testid="text-footer-hours">
+                <Clock className="h-4 w-4" />
+                24/7 Emergency Service
               </li>
             </ul>
           </div>
@@ -99,12 +103,12 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 BradfordPlumbing.co.uk. All rights reserved. |{" "}
-            <a href="#" className="hover:text-primary transition-colors">
+            © 2024 Isle of Wight Plumbing. All rights reserved. |{" "}
+            <a href="#" className="hover:text-primary transition-colors" data-testid="link-footer-privacy">
               Privacy Policy
             </a>{" "}
             |{" "}
-            <a href="#" className="hover:text-primary transition-colors">
+            <a href="#" className="hover:text-primary transition-colors" data-testid="link-footer-terms">
               Terms of Service
             </a>
           </p>
