@@ -6,7 +6,6 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Wrench className="text-primary text-2xl mr-3" />
             <div>
               <h2 className="text-xl font-bold text-foreground">Isle of Wight Plumbing</h2>
               <p className="text-xs text-muted-foreground">Professional Plumbing Services</p>
