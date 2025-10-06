@@ -74,6 +74,47 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Section */}
+      <section className="py-16 bg-card">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+            <div>
+              <h2 className="text-3xl font-bold mb-6">Trusted Plumbing Experts on the Isle of Wight</h2>
+              <p className="text-lg text-muted-foreground mb-6">
+                With over 15 years of experience, Isle of Wight Plumbing provides professional plumbing services to homes and businesses across the island. Our Gas Safe registered engineers are available 24/7 for emergency call-outs.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                From emergency repairs to full bathroom installations, our experienced team delivers quality workmanship and reliable service throughout Newport, Ryde, Cowes, and all areas of the Isle of Wight.
+              </p>
+            </div>
+            <div className="relative">
+              <img 
+                src={plumberImage1} 
+                alt="Professional Isle of Wight plumbing engineer working on pipes - Gas Safe registered plumber" 
+                className="rounded-lg shadow-xl w-full h-auto"
+                data-testid="img-plumber-work"
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="flex flex-col items-center p-6">
+              <Shield className="h-12 w-12 text-primary mb-4" />
+              <h3 className="font-semibold mb-2">Gas Safe Registered</h3>
+              <p className="text-sm text-muted-foreground">Fully certified and qualified engineers</p>
+            </div>
+            <div className="flex flex-col items-center p-6">
+              <Clock className="h-12 w-12 text-primary mb-4" />
+              <h3 className="font-semibold mb-2">24/7 Emergency Service</h3>
+              <p className="text-sm text-muted-foreground">Available any time, day or night</p>
+            </div>
+            <div className="flex flex-col items-center p-6">
+              <CheckCircle className="h-12 w-12 text-primary mb-4" />
+              <h3 className="font-semibold mb-2">Trusted & Reliable</h3>
+              <p className="text-sm text-muted-foreground">Highly rated local service</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Services Section */}
       <section className="py-16">
@@ -82,6 +123,48 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-4">Our Services</h2>
             <p className="text-lg text-muted-foreground">Comprehensive plumbing solutions for all your needs</p>
           </div>
+          
+          {/* Service Images Showcase */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="relative overflow-hidden rounded-lg shadow-lg">
+              <img 
+                src={emergencyImage} 
+                alt="Emergency plumbing repairs Isle of Wight - 24/7 emergency plumber service" 
+                className="w-full h-64 object-cover"
+                data-testid="img-emergency-service"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                <h3 className="text-white font-semibold text-lg">Emergency Repairs</h3>
+                <p className="text-white/90 text-sm">24/7 availability across Isle of Wight</p>
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-lg shadow-lg">
+              <img 
+                src={boilerImage} 
+                alt="Boiler installation and heating services Isle of Wight plumbing - Gas Safe engineer" 
+                className="w-full h-64 object-cover"
+                data-testid="img-boiler-service"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                <h3 className="text-white font-semibold text-lg">Boiler & Heating</h3>
+                <p className="text-white/90 text-sm">Installation, service & repairs</p>
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-lg shadow-lg">
+              <img 
+                src={bathroomImage} 
+                alt="Bathroom fitting and plumbing installation Isle of Wight - professional bathroom installer" 
+                className="w-full h-64 object-cover"
+                data-testid="img-bathroom-service"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                <h3 className="text-white font-semibold text-lg">Bathroom Fitting</h3>
+                <p className="text-white/90 text-sm">Complete bathroom installations</p>
+              </div>
+            </div>
+          </div>
+
+          {/* All Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {services.map((service) => (
               <div 
