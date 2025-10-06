@@ -2,6 +2,11 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { Phone, Mail, MapPin, Wrench, Shield, Clock, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import plumberImage1 from "@assets/stock_images/professional_plumber_f76d645e.jpg";
+import plumberImage2 from "@assets/stock_images/professional_plumber_85e38b42.jpg";
+import boilerImage from "@assets/stock_images/boiler_installation__f4c1d23e.jpg";
+import bathroomImage from "@assets/stock_images/bathroom_plumbing_si_c6369c0e.jpg";
+import emergencyImage from "@assets/stock_images/emergency_plumbing_t_094bc9f8.jpg";
 
 export default function Home() {
   const services = [
@@ -69,34 +74,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-16 bg-card">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Trusted Plumbing Experts on the Isle of Wight</h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              With over 15 years of experience, Isle of Wight Plumbing provides professional plumbing services to homes and businesses across the island. Our Gas Safe registered engineers are available 24/7 for emergency call-outs.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-              <div className="flex flex-col items-center p-6">
-                <Shield className="h-12 w-12 text-primary mb-4" />
-                <h3 className="font-semibold mb-2">Gas Safe Registered</h3>
-                <p className="text-sm text-muted-foreground">Fully certified and qualified engineers</p>
-              </div>
-              <div className="flex flex-col items-center p-6">
-                <Clock className="h-12 w-12 text-primary mb-4" />
-                <h3 className="font-semibold mb-2">24/7 Emergency Service</h3>
-                <p className="text-sm text-muted-foreground">Available any time, day or night</p>
-              </div>
-              <div className="flex flex-col items-center p-6">
-                <CheckCircle className="h-12 w-12 text-primary mb-4" />
-                <h3 className="font-semibold mb-2">Trusted & Reliable</h3>
-                <p className="text-sm text-muted-foreground">Highly rated local service</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Services Section */}
       <section className="py-16">
