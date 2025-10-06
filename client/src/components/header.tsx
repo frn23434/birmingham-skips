@@ -7,7 +7,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <div>
-              <h2 className="text-xl font-bold text-foreground">Isle of Wight Plumbing</h2>
+              <h2 className="text-xl font-bold text-foreground">Bradford Plumbing</h2>
               <p className="text-xs text-muted-foreground">Professional Plumbing Services</p>
             </div>
           </div>

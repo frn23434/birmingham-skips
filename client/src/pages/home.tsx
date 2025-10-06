@@ -20,14 +20,14 @@ export default function Home() {
   ];
 
   const serviceAreas = [
-    "Newport",
-    "Ryde",
-    "Cowes",
-    "East Cowes",
-    "Sandown",
-    "Shanklin",
-    "Ventnor",
-    "Bembridge",
+    "Bradford City Centre",
+    "Shipley",
+    "Bingley",
+    "Keighley",
+    "Ilkley",
+    "Baildon",
+    "Eccleshill",
+    "Thornbury",
   ];
 
   return (
@@ -39,10 +39,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Isle of Wight Plumbing
+              Bradford Plumbing
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Professional plumbing services across the Isle of Wight. Gas Safe registered engineers available 24/7 for emergencies.
+              Professional plumbing services across Bradford. Gas Safe registered engineers available 24/7 for emergencies.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -63,7 +63,7 @@ export default function Home() {
                 asChild
                 data-testid="button-email"
               >
-                <a href="mailto:info@isleofwightplumbing.co.uk">
+                <a href="mailto:info@bradfordplumbing.co.uk">
                   <Mail className="mr-2 h-5 w-5" />
                   Email Us
                 </a>
@@ -78,18 +78,18 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Trusted Plumbing Experts on the Isle of Wight</h2>
+              <h2 className="text-3xl font-bold mb-6">Trusted Plumbing Experts in Bradford</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Isle of Wight Plumbing provides professional plumbing services to homes and businesses across the island. Our Gas Safe registered engineers are available 24/7 for emergency call-outs.
+                Bradford Plumbing provides professional plumbing services to homes and businesses across Bradford and surrounding areas. Our Gas Safe registered engineers are available 24/7 for emergency call-outs.
               </p>
               <p className="text-lg text-muted-foreground">
-                From emergency repairs to full bathroom installations, our experienced team delivers quality workmanship and reliable service throughout Newport, Ryde, Cowes, and all areas of the Isle of Wight.
+                From emergency repairs to full bathroom installations, our experienced team delivers quality workmanship and reliable service throughout Bradford City Centre, Shipley, Bingley, Keighley, and all areas of Bradford.
               </p>
             </div>
             <div className="relative">
               <img 
                 src={plumberWorkImage} 
-                alt="Professional Isle of Wight plumber working on pipes - expert plumbing repair services" 
+                alt="Professional Bradford plumber working on pipes - expert plumbing repair services" 
                 className="rounded-lg shadow-xl w-full h-auto"
                 data-testid="img-plumber-work"
               />
@@ -128,19 +128,19 @@ export default function Home() {
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img 
                 src={emergencyImage} 
-                alt="Emergency plumbing repairs Isle of Wight - 24/7 emergency plumber service" 
+                alt="Emergency plumbing repairs Bradford - 24/7 emergency plumber service" 
                 className="w-full h-64 object-cover"
                 data-testid="img-emergency-service"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
                 <h3 className="text-white font-semibold text-lg">Emergency Repairs</h3>
-                <p className="text-white/90 text-sm">24/7 availability across Isle of Wight</p>
+                <p className="text-white/90 text-sm">24/7 availability across Bradford</p>
               </div>
             </div>
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img 
                 src={boilerImage} 
-                alt="Boiler installation and heating services Isle of Wight plumbing - Gas Safe engineer" 
+                alt="Boiler installation and heating services Bradford plumbing - Gas Safe engineer" 
                 className="w-full h-64 object-cover"
                 data-testid="img-boiler-service"
               />
@@ -152,7 +152,7 @@ export default function Home() {
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img 
                 src={bathroomImage} 
-                alt="Bathroom fitting and plumbing installation Isle of Wight - professional bathroom installer" 
+                alt="Bathroom fitting and plumbing installation Bradford - professional bathroom installer" 
                 className="w-full h-64 object-cover"
                 data-testid="img-bathroom-service"
               />
@@ -184,7 +184,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Areas We Cover</h2>
-            <p className="text-lg text-muted-foreground">Serving the entire Isle of Wight</p>
+            <p className="text-lg text-muted-foreground">Serving Bradford and surrounding areas</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
             {serviceAreas.map((area) => (
@@ -199,7 +199,7 @@ export default function Home() {
             ))}
           </div>
           <p className="text-center mt-8 text-muted-foreground">
-            And surrounding areas across the Isle of Wight
+            And surrounding areas across Bradford
           </p>
         </div>
       </section>
@@ -237,8 +237,8 @@ export default function Home() {
                   <Mail className="h-5 w-5 text-primary mt-1" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <a href="mailto:info@isleofwightplumbing.co.uk" className="text-primary hover:underline" data-testid="link-email">
-                      info@isleofwightplumbing.co.uk
+                    <a href="mailto:info@bradfordplumbing.co.uk" className="text-primary hover:underline" data-testid="link-email">
+                      info@bradfordplumbing.co.uk
                     </a>
                   </div>
                 </div>
@@ -246,7 +246,7 @@ export default function Home() {
                   <MapPin className="h-5 w-5 text-primary mt-1" />
                   <div>
                     <p className="font-medium">Location</p>
-                    <p className="text-muted-foreground">Serving all of Isle of Wight</p>
+                    <p className="text-muted-foreground">Serving all of Bradford</p>
                   </div>
                 </div>
               </div>
@@ -254,7 +254,7 @@ export default function Home() {
             <div className="bg-primary/5 border border-primary/20 rounded-lg p-8">
               <h3 className="font-semibold text-xl mb-4">Emergency Service Available</h3>
               <p className="text-muted-foreground mb-6">
-                We provide 24/7 emergency plumbing services across the Isle of Wight. Whether it's a burst pipe, boiler breakdown, or urgent leak, we're here to help.
+                We provide 24/7 emergency plumbing services across Bradford. Whether it's a burst pipe, boiler breakdown, or urgent leak, we're here to help.
               </p>
               <Button 
                 size="lg" 

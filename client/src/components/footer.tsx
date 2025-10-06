@@ -8,10 +8,10 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-4">
               <Wrench className="text-primary text-xl mr-2" />
-              <h3 className="text-lg font-semibold text-foreground">Isle of Wight Plumbing</h3>
+              <h3 className="text-lg font-semibold text-foreground">Bradford Plumbing</h3>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
-              Professional plumbing services across the Isle of Wight. Gas Safe registered engineers available 24/7.
+              Professional plumbing services across Bradford. Gas Safe registered engineers available 24/7.
             </p>
             <div className="flex gap-3">
               <a href="#" className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors" data-testid="link-footer-facebook">
@@ -87,11 +87,11 @@ export default function Footer() {
               </li>
               <li className="text-sm text-muted-foreground flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                <a href="mailto:info@isleofwightplumbing.co.uk" className="hover:text-primary transition-colors" data-testid="link-footer-email">info@isleofwightplumbing.co.uk</a>
+                <a href="mailto:info@bradfordplumbing.co.uk" className="hover:text-primary transition-colors" data-testid="link-footer-email">info@bradfordplumbing.co.uk</a>
               </li>
               <li className="text-sm text-muted-foreground flex items-center gap-2" data-testid="text-footer-location">
                 <MapPin className="h-4 w-4" />
-                Isle of Wight, UK
+                Bradford, UK
               </li>
               <li className="text-sm text-muted-foreground flex items-center gap-2" data-testid="text-footer-hours">
                 <Clock className="h-4 w-4" />
@@ -103,7 +103,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            © 2025 Isle of Wight Plumbing. All rights reserved. |{" "}
+            © 2025 Bradford Plumbing. All rights reserved. |{" "}
             <a href="#" className="hover:text-primary transition-colors" data-testid="link-footer-privacy">
               Privacy Policy
             </a>{" "}
