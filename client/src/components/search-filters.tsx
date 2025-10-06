@@ -10,15 +10,15 @@ interface SearchFiltersProps {
 }
 
 const areas = [
-  "All Areas in Bradford",
-  "Bradford City Centre",
-  "Shipley",
-  "Keighley",
-  "Bingley",
-  "Ilkley",
-  "Saltaire",
-  "Queensbury",
-  "Thornton",
+  "All Areas on the Isle of Wight",
+  "Newport",
+  "Ryde",
+  "Cowes",
+  "East Cowes",
+  "Sandown",
+  "Shanklin",
+  "Ventnor",
+  "Bembridge",
 ];
 
 const services = [
