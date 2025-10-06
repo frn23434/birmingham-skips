@@ -27,14 +27,14 @@ export default function PlumberProfile() {
   });
 
   useEffect(() => {
-    const originalDescription = "Find trusted, verified plumbers in Bradford, UK. Search by area and service including emergency repairs, boiler installation, bathroom fitting, and more. Gas Safe registered professionals available 24/7.";
+    const originalDescription = "Find trusted, verified plumbers on the Isle of Wight, UK. Search by area and service including emergency repairs, boiler installation, bathroom fitting, and more. Gas Safe registered professionals available 24/7.";
     
     if (plumber) {
-      document.title = `${plumber.businessName} - Plumber in Bradford | BradfordPlumbing.co.uk`;
+      document.title = `${plumber.businessName} - Plumber on the Isle of Wight | IsleofWightPlumbing.co.uk`;
       
       const metaDescription = document.querySelector('meta[name="description"]');
       if (metaDescription) {
-        metaDescription.setAttribute('content', `${plumber.businessName} - ${plumber.description.substring(0, 150)}... Contact: ${plumber.phone}. Serving ${plumber.serviceAreas.join(', ')} in Bradford, UK.`);
+        metaDescription.setAttribute('content', `${plumber.businessName} - ${plumber.description.substring(0, 150)}... Contact: ${plumber.phone}. Serving ${plumber.serviceAreas.join(', ')} on the Isle of Wight, UK.`);
       }
 
       // Update canonical URL for this profile
@@ -44,7 +44,7 @@ export default function PlumberProfile() {
         canonical.setAttribute('rel', 'canonical');
         document.head.appendChild(canonical);
       }
-      canonical.setAttribute('href', `https://bradfordplumbing.co.uk/plumber/${plumber.id}`);
+      canonical.setAttribute('href', `https://isleofwightplumbing.co.uk/plumber/${plumber.id}`);
 
       // Add Schema.org structured data
       const existingSchema = document.getElementById('plumber-schema');
@@ -62,8 +62,8 @@ export default function PlumberProfile() {
         "address": {
           "@type": "PostalAddress",
           "streetAddress": plumber.address,
-          "addressLocality": "Bradford",
-          "addressRegion": "West Yorkshire",
+          "addressLocality": "Isle of Wight",
+          "addressRegion": "England",
           "addressCountry": "GB"
         },
         "areaServed": plumber.serviceAreas.map(area => ({
@@ -86,14 +86,14 @@ export default function PlumberProfile() {
     }
     
     return () => {
-      document.title = "Bradford Plumbing - Find Trusted Local Plumbers in Bradford, UK";
+      document.title = "Isle of Wight Plumbing - Find Trusted Local Plumbers on the Isle of Wight, UK";
       const metaDescription = document.querySelector('meta[name="description"]');
       if (metaDescription) {
         metaDescription.setAttribute('content', originalDescription);
       }
       const canonical = document.querySelector('link[rel="canonical"]');
       if (canonical) {
-        canonical.setAttribute('href', 'https://bradfordplumbing.co.uk/');
+        canonical.setAttribute('href', 'https://isleofwightplumbing.co.uk/');
       }
       const schema = document.getElementById('plumber-schema');
       if (schema) schema.remove();
@@ -180,7 +180,7 @@ export default function PlumberProfile() {
 
               <div className="flex-1">
                 <h1 className="text-2xl font-bold text-foreground mb-2" data-testid="text-business-name">
-                  {plumber.businessName} - Plumber in Bradford
+                  {plumber.businessName} - Plumber on the Isle of Wight
                 </h1>
 
                 <div className="flex items-center gap-3 mb-4">
