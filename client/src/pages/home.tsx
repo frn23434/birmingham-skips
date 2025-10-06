@@ -90,8 +90,8 @@ export default function Home() {
             </div>
             <div className="relative">
               <img 
-                src={plumberImage3} 
-                alt="Professional Isle of Wight plumbing engineer working on pipes - Gas Safe registered plumber" 
+                src={boilerImage} 
+                alt="Professional Isle of Wight plumbing and heating services - boiler installation and repair" 
                 className="rounded-lg shadow-xl w-full h-auto"
                 data-testid="img-plumber-work"
               />
