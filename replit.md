@@ -1,8 +1,8 @@
-# Isle of Wight Plumbing
+# Glasgow Electrical Services
 
 ## Overview
 
-This is a professional one-page business website for Isle of Wight Plumbing, a plumbing service company serving the entire Isle of Wight, UK. The site showcases services, service areas, and contact information in a clean, modern design. Built with React (Vite) on the frontend and Express.js on the backend, it features a modern UI using shadcn/ui components and Tailwind CSS.
+This is a professional one-page business website for Glasgow Electrical Services, an electrical service company serving the entire Glasgow area, UK. The site showcases electrical services, service areas, and contact information in a clean, modern design with a green color scheme. Built with React (Vite) on the frontend and Express.js on the backend, it features a modern UI using shadcn/ui components and Tailwind CSS.
 
 ## User Preferences
 
@@ -37,33 +37,11 @@ Preferred communication style: Simple, everyday language.
 - **Build Tool**: esbuild for production bundling
 
 **Design Decisions:**
-- **RESTful API** design with endpoints under `/api/*` prefix
-- **In-memory storage fallback** (MemStorage class) for development/testing before database is fully configured
-- **Shared schema** between frontend and backend located in `/shared/schema.ts`
-- **Type-safe validation** using Zod schemas generated from Drizzle schemas
-- **Middleware pattern** for request logging and JSON parsing with raw body preservation
-
-**API Endpoints:**
-- `GET /api/plumbers` - Retrieve all plumbers
-- `GET /api/plumbers/search` - Search plumbers with query parameters (query, area, service)
-- `GET /api/plumbers/:id` - Get single plumber details
-
-### Data Storage
-
-**Database Schema:**
-The `plumbers` table contains:
-- `id` (varchar, primary key)
-- Business information (businessName, phone, mobile, email, address)
-- Rating metrics (rating, reviewCount)
-- Service details (serviceAreas, services as JSONB arrays)
-- Business attributes (is24_7, isGasSafe, isVerified as text flags)
-- Operating hours (openingHours as JSONB object)
-
-**Design Decisions:**
-- **PostgreSQL with Drizzle ORM** chosen for type-safe database queries and migrations
-- **JSONB fields** for flexible array storage (serviceAreas, services) and structured data (openingHours)
-- **Text-based boolean flags** (e.g., "true"/"false" strings) for compatibility
-- **Dual storage implementation** with MemStorage for development and database for production
+- **Static informational site** with no backend API endpoints required
+- **Express.js serves the Vite frontend** for development and production
+- **Component-based layout** with Header, Footer, and Home page sections
+- **Contact information** displayed prominently with phone, email, and service area details
+- **Green color scheme** reflecting electrical services branding
 
 ### External Dependencies
 
