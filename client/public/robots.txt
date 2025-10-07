@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://glasgowelectrical.co.uk/sitemap.xml
+Sitemap: https://1014b35c-5faf-4423-85c4-cd2ebe1b61b2-00-3beyydgdamfwz.picard.replit.dev/sitemap.xml
