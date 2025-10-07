@@ -282,7 +282,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-12 text-center text-white">
+          <div className="bg-gradient-to-br from-green-500 to-green-700 rounded-2xl p-12 text-center text-white">
             <Clock className="h-16 w-16 mx-auto mb-6" />
             <h3 className="text-3xl font-bold mb-4">24/7 Emergency Service</h3>
             <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
