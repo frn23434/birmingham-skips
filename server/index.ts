@@ -54,6 +54,28 @@ app.use((req, res, next) => {
 
   const server = await registerRoutes(app);
 
+  // Serve sitemap.xml and robots.txt with correct content types
+  app.get('/sitemap.xml', (_req, res) => {
+    res.type('application/xml');
+    res.send(`<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://londonplumbingservices.co.uk/</loc>
+    <lastmod>2025-11-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>`);
+  });
+
+  app.get('/robots.txt', (_req, res) => {
+    res.type('text/plain');
+    res.send(`User-agent: *
+Allow: /
+
+Sitemap: https://londonplumbingservices.co.uk/sitemap.xml`);
+  });
+
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
     const status = err.status || err.statusCode || 500;
     const message = err.message || "Internal Server Error";
