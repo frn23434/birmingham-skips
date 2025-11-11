@@ -1,8 +1,8 @@
-# Glasgow Electrical Services
+# London Plumbing Services
 
 ## Overview
 
-This is a professional one-page business website for Glasgow Electrical Services, an electrical service company serving the entire Glasgow area, UK. The site showcases electrical services, service areas, and contact information in a clean, modern design with a green color scheme. Built with React (Vite) on the frontend and Express.js on the backend, it features a modern UI using shadcn/ui components and Tailwind CSS.
+This is a professional one-page business website for London Plumbing Services, a plumbing service company serving the entire London area, UK. The site showcases plumbing services, service areas, and contact information in a clean, modern design with a blue color scheme. Built with React (Vite) on the frontend and Express.js on the backend, it features a modern UI using shadcn/ui components and Tailwind CSS.
 
 ## User Preferences
 
@@ -41,7 +41,7 @@ Preferred communication style: Simple, everyday language.
 - **Express.js serves the Vite frontend** for development and production
 - **Component-based layout** with Header, Footer, and Home page sections
 - **Contact information** displayed prominently with phone, email, and service area details
-- **Green color scheme** reflecting electrical services branding
+- **Blue color scheme** reflecting plumbing services branding
 
 ### External Dependencies
 

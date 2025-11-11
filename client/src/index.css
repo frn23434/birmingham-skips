@@ -9,32 +9,32 @@
   --card-foreground: hsl(222, 47%, 11%);
   --popover: hsl(0, 0%, 100%);
   --popover-foreground: hsl(222, 47%, 11%);
-  --primary: hsl(142, 76%, 36%);
+  --primary: hsl(210, 90%, 45%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(158, 64%, 52%);
+  --secondary: hsl(200, 85%, 55%);
   --secondary-foreground: hsl(0, 0%, 100%);
   --muted: hsl(214, 32%, 91%);
   --muted-foreground: hsl(215, 16%, 47%);
-  --accent: hsl(142, 76%, 36%);
+  --accent: hsl(210, 90%, 45%);
   --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(0, 0%, 100%);
   --border: hsl(214, 32%, 91%);
   --input: hsl(214, 32%, 91%);
-  --ring: hsl(142, 76%, 36%);
-  --chart-1: hsl(142, 76%, 36%);
-  --chart-2: hsl(158, 64%, 52%);
-  --chart-3: hsl(134, 61%, 41%);
-  --chart-4: hsl(147, 78%, 42%);
-  --chart-5: hsl(152, 69%, 31%);
+  --ring: hsl(210, 90%, 45%);
+  --chart-1: hsl(210, 90%, 45%);
+  --chart-2: hsl(200, 85%, 55%);
+  --chart-3: hsl(215, 75%, 50%);
+  --chart-4: hsl(205, 80%, 60%);
+  --chart-5: hsl(195, 70%, 40%);
   --sidebar: hsl(0, 0%, 100%);
   --sidebar-foreground: hsl(222, 47%, 11%);
-  --sidebar-primary: hsl(142, 76%, 36%);
+  --sidebar-primary: hsl(210, 90%, 45%);
   --sidebar-primary-foreground: hsl(0, 0%, 100%);
   --sidebar-accent: hsl(214, 32%, 91%);
-  --sidebar-accent-foreground: hsl(142, 76%, 36%);
+  --sidebar-accent-foreground: hsl(210, 90%, 45%);
   --sidebar-border: hsl(214, 32%, 91%);
-  --sidebar-ring: hsl(142, 76%, 36%);
+  --sidebar-ring: hsl(210, 90%, 45%);
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: Menlo, monospace;
@@ -48,19 +48,19 @@
   --card-foreground: hsl(0, 0%, 85.0980%);
   --popover: hsl(0, 0%, 0%);
   --popover-foreground: hsl(200, 6.6667%, 91.1765%);
-  --primary: hsl(142, 76%, 36%);
+  --primary: hsl(210, 90%, 45%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(158, 64%, 52%);
+  --secondary: hsl(200, 85%, 55%);
   --secondary-foreground: hsl(0, 0%, 100%);
   --muted: hsl(0, 0%, 9.4118%);
   --muted-foreground: hsl(210, 3.3898%, 46.2745%);
-  --accent: hsl(142, 76%, 36%);
+  --accent: hsl(210, 90%, 45%);
   --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(0, 0%, 100%);
   --border: hsl(210, 5.2632%, 14.9020%);
   --input: hsl(207.6923, 27.6596%, 18.4314%);
-  --ring: hsl(142, 76%, 36%);
+  --ring: hsl(210, 90%, 45%);
 }
 
 @layer base {
@@ -75,5 +75,5 @@
 }
 
 .hero-pattern {
-  background-color: hsl(142, 76%, 36%);
+  background-color: hsl(210, 90%, 45%);
 }
