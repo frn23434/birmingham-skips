@@ -1,6 +1,7 @@
+import { Link } from "wouter";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import { Phone, Mail, MapPin, Wrench, Shield, Clock, CheckCircle, Droplet } from "lucide-react";
+import { Phone, Mail, MapPin, Wrench, Shield, Clock, CheckCircle, Droplet, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import plumberWorkImage from "@assets/stock_images/professional_plumber_571ca936.jpg";
 import bathroomImage from "@assets/stock_images/bathroom_plumbing_in_8936d7d8.jpg";
@@ -234,9 +235,15 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center">
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-lg mb-6">
               And all surrounding areas across Greater London
             </p>
+            <Link href="/plumbers">
+              <Button size="lg" variant="default" className="gap-2" data-testid="button-view-all-areas">
+                View All Service Areas
+                <ArrowRight className="h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

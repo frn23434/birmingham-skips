@@ -10,6 +10,11 @@ import type { LocationPage } from "@shared/schema";
 export default function PlumbersHub() {
   const { data: locations, isLoading } = useQuery<LocationPage[]>({
     queryKey: ["/api/locations"],
+    queryFn: async () => {
+      const response = await fetch("/api/locations");
+      if (!response.ok) throw new Error("Failed to fetch locations");
+      return response.json();
+    },
   });
 
   return (

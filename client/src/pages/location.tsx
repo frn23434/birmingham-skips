@@ -20,6 +20,11 @@ export default function LocationPageComponent() {
 
   const { data: location, isLoading } = useQuery<LocationPage>({
     queryKey: ["/api/locations", slug],
+    queryFn: async () => {
+      const response = await fetch(`/api/locations/${slug}`);
+      if (!response.ok) throw new Error("Location not found");
+      return response.json();
+    },
   });
 
   useEffect(() => {
