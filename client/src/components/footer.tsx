@@ -40,7 +40,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-areas">
+                <a href="/plumbers" className="text-sm text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-areas">
                   Service Areas
                 </a>
               </li>

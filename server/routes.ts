@@ -29,6 +29,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
     res.json(plumber);
   });
 
+  // Get all location pages
+  app.get("/api/locations", async (_req, res) => {
+    const locations = await storage.getAllLocationPages();
+    res.json(locations);
+  });
+
+  // Get single location page by slug
+  app.get("/api/locations/:slug", async (req, res) => {
+    const location = await storage.getLocationPage(req.params.slug);
+    if (!location) {
+      return res.status(404).json({ message: "Location not found" });
+    }
+    res.json(location);
+  });
+
   const httpServer = createServer(app);
   return httpServer;
 }
