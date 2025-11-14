@@ -34,3 +34,29 @@ export const insertPlumberSchema = createInsertSchema(plumbers).omit({
 
 export type InsertPlumber = z.infer<typeof insertPlumberSchema>;
 export type Plumber = typeof plumbers.$inferSelect;
+
+export const locationPages = pgTable("location_pages", {
+  id: varchar("id").primaryKey(),
+  slug: text("slug").notNull().unique(),
+  name: text("name").notNull(),
+  borough: text("borough").notNull(),
+  metaTitle: text("meta_title").notNull(),
+  metaDescription: text("meta_description").notNull(),
+  heroTitle: text("hero_title").notNull(),
+  heroSubtitle: text("hero_subtitle").notNull(),
+  introText: text("intro_text").notNull(),
+  landmarkText: text("landmark_text").notNull(),
+  servicesEmphasis: text("services_emphasis").notNull(),
+  emergencyResponse: text("emergency_response").notNull(),
+  testimonialAuthor: text("testimonial_author").notNull(),
+  testimonialText: text("testimonial_text").notNull(),
+  testimonialService: text("testimonial_service").notNull(),
+  faqs: jsonb("faqs").$type<Array<{ question: string; answer: string }>>().notNull(),
+});
+
+export const insertLocationPageSchema = createInsertSchema(locationPages).omit({
+  id: true,
+});
+
+export type InsertLocationPage = z.infer<typeof insertLocationPageSchema>;
+export type LocationPage = typeof locationPages.$inferSelect;
