@@ -60,9 +60,7 @@ app.use((req, res, next) => {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://wolverhamptonskips.co.uk/</loc>
-    <lastmod>2026-01-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-01-12</lastmod>
   </url>
 </urlset>`;
     
