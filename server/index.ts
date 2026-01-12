@@ -54,40 +54,20 @@ app.use((req, res, next) => {
 
   const server = await registerRoutes(app);
 
-  // Serve sitemap.xml with caching
-  let cachedSitemap: string | null = null;
-  app.get('/sitemap.xml', async (_req, res) => {
-    if (!cachedSitemap) {
-      const { storage } = await import('./storage.js');
-      const locations = await storage.getAllLocationPages();
-      
-      const locationUrls = locations.map(loc => `  <url>
-    <loc>https://londonplumbingservices.co.uk/plumbers/${loc.slug}</loc>
-    <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>`).join('\n');
-      
-      cachedSitemap = `<?xml version="1.0" encoding="UTF-8"?>
+  // Serve sitemap.xml
+  app.get('/sitemap.xml', (_req, res) => {
+    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://londonplumbingservices.co.uk/</loc>
-    <lastmod>2025-11-14T00:00:00+00:00</lastmod>
+    <loc>https://wolverhamptonskips.co.uk/</loc>
+    <lastmod>2026-01-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://londonplumbingservices.co.uk/plumbers</loc>
-    <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-${locationUrls}
 </urlset>`;
-    }
     
     res.type('application/xml');
-    res.send(cachedSitemap);
+    res.send(sitemap);
   });
 
   app.get('/robots.txt', (_req, res) => {
@@ -95,7 +75,7 @@ ${locationUrls}
     res.send(`User-agent: *
 Allow: /
 
-Sitemap: https://londonplumbingservices.co.uk/sitemap.xml`);
+Sitemap: https://wolverhamptonskips.co.uk/sitemap.xml`);
   });
 
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {

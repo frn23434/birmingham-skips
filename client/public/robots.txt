@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://londonplumbingservices.co.uk/sitemap.xml
+Sitemap: https://wolverhamptonskips.co.uk/sitemap.xml
