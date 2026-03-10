@@ -168,7 +168,19 @@ export class MemStorage implements IStorage {
 
     plumberData.forEach((data) => {
       const id = randomUUID();
-      const plumber: Plumber = { ...data, id, mobile: data.mobile || null };
+      const plumber: Plumber = {
+        ...data,
+        id,
+        mobile: data.mobile || null,
+        serviceAreas: [...data.serviceAreas],
+        services: [...data.services],
+        rating: data.rating ?? 0,
+        reviewCount: data.reviewCount ?? 0,
+        is24_7: data.is24_7 ?? "false",
+        isGasSafe: data.isGasSafe ?? "false",
+        isVerified: data.isVerified ?? "false",
+        openingHours: (data.openingHours as Plumber["openingHours"]) ?? null,
+      };
       this.plumbers.set(id, plumber);
     });
   }
@@ -213,7 +225,19 @@ export class MemStorage implements IStorage {
 
   async createPlumber(insertPlumber: InsertPlumber): Promise<Plumber> {
     const id = randomUUID();
-    const plumber: Plumber = { ...insertPlumber, id, mobile: insertPlumber.mobile || null };
+    const plumber: Plumber = {
+      ...insertPlumber,
+      id,
+      mobile: insertPlumber.mobile || null,
+      serviceAreas: [...insertPlumber.serviceAreas],
+      services: [...insertPlumber.services],
+      rating: insertPlumber.rating ?? 0,
+      reviewCount: insertPlumber.reviewCount ?? 0,
+      is24_7: insertPlumber.is24_7 ?? "false",
+      isGasSafe: insertPlumber.isGasSafe ?? "false",
+      isVerified: insertPlumber.isVerified ?? "false",
+      openingHours: (insertPlumber.openingHours as Plumber["openingHours"]) ?? null,
+    };
     this.plumbers.set(id, plumber);
     return plumber;
   }
