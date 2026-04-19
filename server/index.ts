@@ -62,6 +62,10 @@ app.use((req, res, next) => {
     <loc>https://wolverhamptonskips.co.uk/</loc>
     <lastmod>2026-01-12</lastmod>
   </url>
+  <url>
+    <loc>https://wolverhamptonskips.co.uk/skip-hire-in-tettenhall</loc>
+    <lastmod>2026-04-19</lastmod>
+  </url>
 </urlset>`;
     
     res.type('application/xml');
@@ -72,6 +76,7 @@ app.use((req, res, next) => {
     res.type('text/plain');
     res.send(`User-agent: *
 Allow: /
+Allow: /skip-hire-in-tettenhall
 
 Sitemap: https://wolverhamptonskips.co.uk/sitemap.xml`);
   });

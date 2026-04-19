@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Allow: /skip-hire-in-tettenhall
 
 Sitemap: https://wolverhamptonskips.co.uk/sitemap.xml
