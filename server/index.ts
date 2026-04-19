@@ -96,11 +96,7 @@ Sitemap: https://wolverhamptonskips.co.uk/sitemap.xml`);
   // Serve on the port from env, defaulting to 5000.
   // This serves both the API and the client.
   const port = parseInt(process.env.PORT || '5000', 10);
-  server.listen({
-    port,
-    host: "0.0.0.0",
-    reusePort: true,
-  }, () => {
-    log(`serving on port ${port}`);
+  server.listen(port, "127.0.0.1", () => {
+    log(`serving on http://127.0.0.1:${port}`);
   });
 })();
