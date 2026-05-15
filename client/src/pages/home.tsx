@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const whatsappNumber = "447900717881";
-  const whatsappMessage = encodeURIComponent("Hi, I'd like to enquire about skip hire in Wolverhampton.");
+  const whatsappMessage = encodeURIComponent("Hi, I'd like to enquire about skip hire in Birmingham.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   const skipSizes = [
@@ -48,14 +48,14 @@ export default function Home() {
   ];
 
   const serviceAreas = [
-    "Wolverhampton City Centre",
-    "Bilston",
-    "Wednesfield",
-    "Tettenhall",
-    "Penn",
-    "Willenhall",
-    "Dudley",
-    "Walsall",
+    "Birmingham City Centre",
+    "Edgbaston",
+    "Selly Oak",
+    "Harborne",
+    "Erdington",
+    "Sutton Coldfield",
+    "Solihull",
+    "Smethwick",
   ];
 
   const features = [
@@ -79,10 +79,10 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <h1 className="text-5xl md:text-6xl font-bold mb-6" data-testid="text-hero-title">
-                Wolverhampton Skips
+                Birmingham Skips
               </h1>
               <p className="text-xl md:text-2xl text-blue-100 mb-8" data-testid="text-hero-subtitle">
-                Fast, reliable skip hire services across Wolverhampton and the West Midlands. All sizes available.
+                Fast, reliable skip hire services across Birmingham and the West Midlands. All sizes available.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 

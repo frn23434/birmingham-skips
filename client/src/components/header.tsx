@@ -13,7 +13,7 @@ import {
 
 export default function Header() {
   const whatsappNumber = "447900717881";
-  const whatsappMessage = encodeURIComponent("Hi, I'd like to enquire about skip hire in Wolverhampton.");
+  const whatsappMessage = encodeURIComponent("Hi, I'd like to enquire about skip hire in Birmingham.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
@@ -23,7 +23,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3" data-testid="link-header-home-logo">
             <Truck className="h-8 w-8 text-primary" />
             <div>
-              <h2 className="text-xl font-bold text-foreground">Wolverhampton Skips</h2>
+              <h2 className="text-xl font-bold text-foreground">Birmingham Skips</h2>
               <p className="text-xs text-muted-foreground">Skip Hire Services</p>
             </div>
           </Link>
@@ -45,8 +45,8 @@ export default function Header() {
                 <DropdownMenuLabel>Browse Locations</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
-                  <Link href="/" data-testid="link-menu-location-wolverhampton">
-                    Skip Hire in Wolverhampton
+                  <Link href="/" data-testid="link-menu-location-birmingham">
+                    Skip Hire in Birmingham
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
@@ -73,8 +73,8 @@ export default function Header() {
                 <DropdownMenuLabel>Browse Locations</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
-                  <Link href="/" data-testid="link-menu-mobile-location-wolverhampton">
-                    Skip Hire in Wolverhampton
+                  <Link href="/" data-testid="link-menu-mobile-location-birmingham">
+                    Skip Hire in Birmingham
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
