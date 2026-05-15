@@ -3,7 +3,7 @@ import { SiWhatsapp } from "react-icons/si";
 
 export default function Footer() {
   const whatsappNumber = "447900717881";
-  const whatsappMessage = encodeURIComponent("Hi, I'd like to enquire about skip hire in Wolverhampton.");
+  const whatsappMessage = encodeURIComponent("Hi, I'd like to enquire about skip hire in Birmingham.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
@@ -13,10 +13,10 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-4">
               <Truck className="text-primary text-xl mr-2" />
-              <h3 className="text-lg font-semibold text-foreground">Wolverhampton Skips</h3>
+              <h3 className="text-lg font-semibold text-foreground">Birmingham Skips</h3>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
-              Professional skip hire services in Wolverhampton and surrounding areas. Fast delivery and collection.
+              Professional skip hire services in Birmingham and surrounding areas. Fast delivery and collection.
             </p>
             <div className="flex gap-3">
               <a href="#" className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors" data-testid="link-footer-facebook">
