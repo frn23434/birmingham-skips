@@ -50,8 +50,28 @@ export default function Header() {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="/skip-hire-in-tettenhall" data-testid="link-menu-location-tettenhall">
-                    Skip Hire in Tettenhall
+                  <Link href="/" data-testid="link-menu-location-edgbaston">
+                    Skip Hire in Edgbaston
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/" data-testid="link-menu-location-selly-oak">
+                    Skip Hire in Selly Oak
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/" data-testid="link-menu-location-harborne">
+                    Skip Hire in Harborne
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/" data-testid="link-menu-location-moseley">
+                    Skip Hire in Moseley
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/" data-testid="link-menu-location-kings-heath">
+                    Skip Hire in King's Heath
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -78,8 +98,28 @@ export default function Header() {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="/skip-hire-in-tettenhall" data-testid="link-menu-mobile-location-tettenhall">
-                    Skip Hire in Tettenhall
+                  <Link href="/" data-testid="link-menu-mobile-location-edgbaston">
+                    Skip Hire in Edgbaston
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/" data-testid="link-menu-mobile-location-selly-oak">
+                    Skip Hire in Selly Oak
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/" data-testid="link-menu-mobile-location-harborne">
+                    Skip Hire in Harborne
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/" data-testid="link-menu-mobile-location-moseley">
+                    Skip Hire in Moseley
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/" data-testid="link-menu-mobile-location-kings-heath">
+                    Skip Hire in King's Heath
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>

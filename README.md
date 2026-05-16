@@ -14,7 +14,8 @@ npm install
 npm run dev
 ```
 
-The server runs on `http://localhost:5000` by default.
+The dev server runs on `http://localhost:5173` by default.
+If 5173 is in use, Vite will automatically choose the next available localhost port.
 
 ## Build and start
 

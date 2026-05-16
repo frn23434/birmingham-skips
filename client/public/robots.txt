@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://birminghamskips.co.uk/sitemap.xml
+Sitemap: https://birmingham-skips.co.uk/sitemap.xml

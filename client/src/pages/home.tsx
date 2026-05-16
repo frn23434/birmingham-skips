@@ -54,8 +54,8 @@ export default function Home() {
     "Harborne",
     "Erdington",
     "Sutton Coldfield",
-    "Solihull",
-    "Smethwick",
+    "Moseley",
+    "King's Heath",
   ];
 
   const features = [
@@ -81,8 +81,8 @@ export default function Home() {
               <h1 className="text-5xl md:text-6xl font-bold mb-6" data-testid="text-hero-title">
                 Birmingham Skips
               </h1>
-              <p className="text-xl md:text-2xl text-blue-100 mb-8" data-testid="text-hero-subtitle">
-                Fast, reliable skip hire services across Birmingham and the West Midlands. All sizes available.
+              <p className="text-xl md:text-2xl text-emerald-100 mb-8" data-testid="text-hero-subtitle">
+                Fast, reliable skip hire across Birmingham, including City Centre, Edgbaston, Selly Oak, Harborne, Moseley, King's Heath, Erdington and Sutton Coldfield, with all skip sizes available for domestic and commercial projects.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
@@ -194,9 +194,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6" data-testid="text-why-title">Why Choose Wolverhampton Skips?</h2>
+              <h2 className="text-4xl font-bold mb-6" data-testid="text-why-title">Why Choose Birmingham Skips?</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                We're the trusted skip hire company in Wolverhampton and the West Midlands. With competitive prices, reliable service, and a range of skip sizes to suit any project, we make waste disposal simple.
+                We're a trusted skip hire company across Birmingham. With competitive prices, reliable service, and a range of skip sizes to suit any project, we make waste disposal simple.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-4 p-4 bg-background rounded-lg">
@@ -210,7 +210,7 @@ export default function Home() {
                   <Clock className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Fast Delivery & Collection</h3>
-                    <p className="text-muted-foreground">Same day delivery available across Wolverhampton</p>
+                    <p className="text-muted-foreground">Same day delivery available across Birmingham</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-background rounded-lg">
@@ -246,7 +246,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4" data-testid="text-areas-title">Areas We Cover</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Skip hire services across Wolverhampton and the surrounding West Midlands area</p>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Skip hire services across Birmingham and surrounding areas</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-5xl mx-auto mb-8">
             {serviceAreas.map((area) => (
@@ -264,7 +264,7 @@ export default function Home() {
           </div>
           <div className="text-center">
             <p className="text-muted-foreground text-lg mb-6">
-              And all surrounding areas across the West Midlands
+              And all surrounding areas across Birmingham
             </p>
           </div>
         </div>

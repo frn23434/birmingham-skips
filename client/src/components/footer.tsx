@@ -89,7 +89,7 @@ export default function Footer() {
               </li>
               <li className="text-sm text-muted-foreground flex items-center gap-2" data-testid="text-footer-location">
                 <MapPin className="h-4 w-4" />
-                Wolverhampton, West Midlands
+                Birmingham, West Midlands
               </li>
               <li className="text-sm text-muted-foreground flex items-center gap-2" data-testid="text-footer-hours">
                 <Clock className="h-4 w-4" />
@@ -101,7 +101,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            © 2025 Wolverhampton Skips. All rights reserved. |{" "}
+            © 2025 Birmingham Skips. All rights reserved. |{" "}
             <a href="#" className="hover:text-primary transition-colors" data-testid="link-footer-privacy">
               Privacy Policy
             </a>{" "}

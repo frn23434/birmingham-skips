@@ -17,6 +17,14 @@ export default defineConfig({
     emptyOutDir: true,
   },
   server: {
+    host: "localhost",
+    port: 5173,
+    strictPort: false,
+    watch: {
+      // Polling improves hot reload reliability on some Windows setups.
+      usePolling: true,
+      interval: 100,
+    },
     fs: {
       strict: true,
       deny: ["**/.*"],
